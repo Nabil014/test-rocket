@@ -1,34 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import styled from 'styled-components';
+import Form from './components/Form';
 
-function App() {
-  const [count, setCount] = useState(0)
+const Title = styled.h1`
+font-size: 1.5em;
+text-align: center;
+color: #BF4F74;
+`
+
+const ChatDisplay = styled.div`
+max-width: 400px;
+margin: 0 auto;
+`
+
+function App () {
+
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <ChatDisplay>
+      <Title>Rocket-code</Title>
+      <Form />
+    </ChatDisplay>
   )
 }
 
