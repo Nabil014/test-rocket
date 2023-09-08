@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import styled from 'styled-components';
 import avatar from '../assets/avatar.svg'
 import { useEffect, useState } from 'react';
